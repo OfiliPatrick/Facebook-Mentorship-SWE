@@ -1,0 +1,17 @@
+Examples.& Edge cases. 
+    "abc", "bca" => true
+    "abc", "aab" => false
+    "aab", "baa" => true
+    "" , "" => true
+    "abcd", "abc" => false
+    
+2. Algorithm: use a hash table to track counts of letter occurances. Ensure both strings have the same count. 
+
+3. Code
+
+4. Test your 
+
+5. Explain runtime, space use
+
+"""
+https://www.linkedin.com/in/somya

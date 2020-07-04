@@ -21,7 +21,7 @@ class LRUCache:
         while test:
             my_data.append(test.val)
             test = test.next
-        return my_data, self.curr_size
+        return my_data
 
     def removeNode(self, node):
         node_after = node.next

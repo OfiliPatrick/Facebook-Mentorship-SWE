@@ -1,4 +1,14 @@
 def allUnique1(s):
+    seen_chars = {}
+    for char in s:
+        if char in seen_chars:
+            return False
+        else:
+            seen_chars[char] = True
+    return True
+    
+
+def allUnique2(s):
     import collections
     seen_chars = collections.defaultdict(bool)
     for char in s:
@@ -7,10 +17,9 @@ def allUnique1(s):
         else:
             return False
     return True
-    
 
-# A more pythonic way lol (using sets)
-def allUnique2(s):
+
+def allUnique3(s):
     return len(set(s)) == len(s)
 
-print(allUnique2('about'))
+print(allUnique3('about'))
