@@ -1,5 +1,0 @@
-def longRun(s):
-    pass
-        
-
-
