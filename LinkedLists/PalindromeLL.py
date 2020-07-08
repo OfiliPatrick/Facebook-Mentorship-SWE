@@ -1,10 +1,25 @@
 """
+Examples 
+    For Singly Linked List:
+    - [1,2,1]   =>  True
+    - [1,2,3], 1  =>  False
+    - [1,1] , 1  =>  True
+    - [1] => True
+  
 Steps
-Can i assume that the node will always be in the list
+    For Singly Linked List:
+     1. Extract all values into array
+     2. Have 2 pointers converge from the first and last index while checking for matching values
+     3. Return False if mismatch else return true on successful convergence
+     4. Time complexity is O(n), Space complexity is O(n)
 
-1. 
+    For Doubly Linked List (follow up):
+     1. Get the total length of the linked list
+     2. Have 2 pointers converge length/2 times from the head and tail node while checking for matching values
+     3. Return False if mismatch else return true on successful convergence
+     4. Time complexity is O(n), Space complexity is O(n)
+
 """
-
 class SNode(object):
     def __init__(self, val):
         self.val = val
@@ -16,7 +31,6 @@ class DNode(object):
         self.next = None
         self.prev = None
       
-# Palindrome check for Singly Linked List
 def isPalindromeSingly(head):
     all_vals = []
     while head:
@@ -33,9 +47,6 @@ def isPalindromeSingly(head):
 
     return True
 
-    
-
-# Palindrome check for Singly Linked List  
 def isPalindromeDoubly(head):
     new_head = head
     length = 0
@@ -56,27 +67,29 @@ def isPalindromeDoubly(head):
     return True
 
 
-#Test Case1 :  1 -> 2 -> 3 -> 4
-SinglyLL = SNode(1)
-SinglyLL.next = SNode(2)
-SinglyLL.next.next = SNode(3)
-SinglyLL.next.next.next = SNode(4)
+#Test Case1 :  1 -> 2 -> 3 -> 4 -> None
 
-print(isPalindromeSingly(SinglyLL))
+# SinglyLL = SNode(1)
+# SinglyLL.next = SNode(2)
+# SinglyLL.next.next = SNode(3)
+# SinglyLL.next.next.next = SNode(4)
 
 
 
 # Test Case 2
-#     ->     ->
-#  5      6      7
-#     <-     <-
-DoublyLL = DNode(5)
-DoublyLL.next = DNode(6)
-DoublyLL.next.prev = DoublyLL
-DoublyLL.next.next = DNode(7)
-DoublyLL.next.next.prev = DoublyLL.next
 
-print(isPalindromeDoubly(DoublyLL))
+#     ->     ->     ->
+#  5      6      7      None
+#     <-     <-     <-
+
+# DoublyLL = DNode(5)
+# DoublyLL.next = DNode(6)
+# DoublyLL.next.prev = DoublyLL
+# DoublyLL.next.next = DNode(5)
+# DoublyLL.next.next.prev = DoublyLL.next
+
+# print(isPalindromeSingly(SinglyLL))
+# print(isPalindromeDoubly(DoublyLL))
 
 
 
