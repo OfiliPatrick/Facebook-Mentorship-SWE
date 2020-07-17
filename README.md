@@ -1,2 +1,2 @@
-# FB-Algorithms
-Data Structures and Algorithms
+# facebook-mentorship
+Questions and problems solved during facebook's mentorship program.
