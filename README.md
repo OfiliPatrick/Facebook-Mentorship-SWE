@@ -1,2 +1,2 @@
 # facebook-mentorship
-Questions and problems solved during facebook's mentorship program.
+Questions and problems solved during facebook's SWE mentorship program.
