@@ -21,3 +21,4 @@ def isSub(big,small):
 
 # print(isSub('defragmentation','fragmen'))
 print(isSub('abba', 'aa'))
+

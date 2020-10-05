@@ -18,7 +18,6 @@ def fib1(n):
 
     return helper(n)
 
-
 #without memoization
 
 def fib2(n):
@@ -28,6 +27,4 @@ def fib2(n):
 
 for i in range(1,100):
     print(fib1(i))
-
-
 
